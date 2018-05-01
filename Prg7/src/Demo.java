@@ -1,21 +1,3 @@
-/*
-**************************
-@Author: Vishal P
-@Lab: Java and J2EE Lab
-Code changed from Pawan-Ranjith
-**************************
-Ques : Write a Java program to create a progress bar GUI which displays the copy
-status of writing contents of one file to another file. Terminate the progress bar
-on click of STOP button and display the contents of the file.
-
-Note: Run as a normal Java Project not a Dynamic Web Project in eclipse
-OR
-Just cd into src and run
--> javac Demo.java
--> java Demo
-
-*/
-
 
 import java.awt.FlowLayout;
 import java.awt.event.*;
