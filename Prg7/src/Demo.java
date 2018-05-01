@@ -17,18 +17,9 @@ Just cd into src and run
 
 
 import java.awt.FlowLayout;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.PrintWriter;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JProgressBar;
-import javax.swing.JTextArea;
-import javax.swing.JTextField;
+import java.awt.event.*;
+import java.io.*;
+import javax.swing.*;
 
 public class Demo {
 
@@ -66,7 +57,7 @@ public class Demo {
 				pb.setStringPainted(true);
 				pb.setVisible(true);
 				try(BufferedReader br = new BufferedReader(new FileReader(new File(src)))) {
-					System.out.println("HERE");
+					System.out.println("DONE");
 					f.add(pb);
 					f.add(b2);
 					f.setVisible(true);
