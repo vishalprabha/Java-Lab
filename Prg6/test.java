@@ -11,8 +11,6 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import java.sql.*;
 
-//import com.mysql.jdbc.Connection;
-//import com.mysql.jdbc.Statement;
 
 public class test {
 
