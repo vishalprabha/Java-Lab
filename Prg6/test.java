@@ -35,32 +35,18 @@ public class test {
 		jb2 = new JButton("Insert2");
 		jb3 = new JButton("Show");
 
-		txt1 = new JTextField();
-		txt2 = new JTextField();
-		txt3 = new JTextField();
-		txt4 = new JTextField();
-		txt5 = new JTextField();
+		txt1 = new JTextField(20);
+		txt2 = new JTextField(20);
+		txt3 = new JTextField(20);
+		txt4 = new JTextField(20);
+		txt5 = new JTextField(20);
 
-		tx1 = new JTextField();
-		tx2 = new JTextField();
-		tx3 = new JTextField();
-		tx4 = new JTextField();
-
-		txt1.setColumns(20);
-		txt2.setColumns(20);
-		txt3.setColumns(20);
-		txt4.setColumns(20);
-		txt5.setColumns(20);
-
-		tx1.setColumns(20);
-		tx2.setColumns(20);
-		tx3.setColumns(20);
-		tx4.setColumns(20);
+		tx1 = new JTextField(20);
+		tx2 = new JTextField(20);
+		tx3 = new JTextField(20);
+		tx4 = new JTextField(20);
 
 		JTextArea ta = new JTextArea(20,40);
-		ta.setLineWrap(true);
-		ta.setWrapStyleWord(true);
-
 		f.setLayout(new FlowLayout());
 		f.add(label1);
 		f.add(txt1);
