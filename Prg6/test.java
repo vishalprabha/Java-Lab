@@ -110,7 +110,7 @@ public class test {
 					Connection conn = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/java","root", "12345678");
 					if(conn!=null){
 						Statement stmt = (Statement) conn.createStatement();
-						stmt.executeUpdate("insert into Representative values("+repno+",'"+rname+"','"+state+"',"+comrate+");");
+						stmt.executeUpdate("insert into Representative values("+repno+",''"+rname+"','"+state+"',"+comrate+");");
 					}
 				}catch(Exception ex){
 					ex.printStackTrace();
