@@ -63,9 +63,15 @@ public class BuyTShirt extends HttpServlet {
 			acc = acc + x + " ";
 
 		try {
-			Statement stmt;
-			stmt = (Statement) con.createStatement();
-			stmt.executeUpdate("insert into tshirt values(" + acc + ",'" + tag + "','" + pocket +"','" + colour +"');");
+			PreparedStatement stmt;
+			stmt = con.prepareStatement("insert into thirt values(?,?,?,?,?)");
+			stmt.setInt(1,0);
+			stmt.setString(2,acc);
+			stmt.setString(3,tag);
+			stmt.setInt(4,pocket);
+			stmt.setString(5,colour);
+			stmt.executeUpdate();
+//			stmt.executeUpdate("insert into thirt values("+0+"," + acc + ",'" + tag + "','" + pocket +"','" + colour +"');");
 
 		}
 		catch (Exception e) {
