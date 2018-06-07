@@ -26,8 +26,6 @@
 			Connection conn = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/lab","root","root");
 			if(conn!=null){
 				Statement stmt = (Statement)conn.createStatement();
-				ResultSet rs = null;
-				//rs = stmt.executeQuery("select * from Flight where fno="+fno+";");
 				try{
 					stmt.executeUpdate("insert into SeatReservation values("+fno+",'"+date+"',"+sno+",'"+name+"',"+number+");");
 					pout.println(name+" "+number+" "+date+" "+fno+" "+sno);

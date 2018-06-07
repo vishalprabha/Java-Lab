@@ -17,7 +17,7 @@ PrintWriter pout = response.getWriter();
 String day = request.getParameter("day");
 try{
 	Class.forName("com.mysql.jdbc.Driver");
-	Connection conn = (Connection)DriverManager.getConnection("jdbc:mysql://localhost/lab","root","root");
+	Connection conn = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/lab","root","root");
 	Statement stmt = (Statement)conn.createStatement();
 	ResultSet rs;
 	rs= stmt.executeQuery("select * from Flight where weekdays LIKE '%"+day+"%';");
