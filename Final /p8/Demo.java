@@ -1,11 +1,18 @@
-public class Demo {
+public class MainClass {
 
-	public static void main(String[] args) throws InterruptedException {
-		GetNumberThread nt = new GetNumberThread();
-		GetStringThread st = new GetStringThread();
-		nt.start();
-		Thread.sleep(5000);
-		st.start();
+	public static void main(String[] args) {
+		Thread t1 = new NumberThread();
+		Thread t2 = new VowelThread();
+
+		t1.start();
+
+		try {
+			t1.join();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		t2.start();
+
 	}
 
 }

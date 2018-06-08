@@ -1,9 +1,6 @@
-<%@page import="java.util.Random"%>
-<%@page import="java.sql.ResultSet"%>
-<%@page import="com.mysql.jdbc.Statement"%>
-<%@page import="java.sql.DriverManager"%>
-<%@page import="com.mysql.jdbc.Connection"%>
-<%@page import="java.io.PrintWriter"%>
+<%@page import="java.util.*"%>
+<%@page import="java.sql.*"%>
+<%@page import="java.io.*"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -20,7 +17,6 @@
 		int fno = Integer.parseInt(request.getParameter("fno"));
 		int sno = new Random().nextInt(500)+1;
 		String date = request.getParameter("date");
-		//pout.print(name+number+fno+date);
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
 			Connection conn = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/lab","root","root");
